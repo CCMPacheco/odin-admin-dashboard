@@ -1,3 +1,16 @@
+:root {
+  --slate-50: #f8fafc;
+  --slate-100: #f1f5f9;
+  --slate-200: #e2e8f0;
+  --slate-300: #cbd5e1;
+  --slate-400: #94a3b8;
+  --slate-500: #64748b;
+  --slate-600: #475569;
+  --slate-700: #334155;
+  --slate-800: #1e293b;
+  --slate-900: #0f172a;
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 * {
@@ -7,8 +20,14 @@
   font-family: "Roboto", sans-serif;
 }
 
+ul {
+  list-style: none;
+}
+
 a {
   text-decoration: none;
+  color: var(--slate-50);
+  font-weight: bold;
 }
 
 .grid-container {
@@ -20,17 +39,53 @@ a {
 }
 
 .sidebar {
-  background-color: green;
+  background-color: var(--slate-600);
+  color: var(--slate-50);
   grid-column: 1 / 2;
   grid-row: 1 / -1;
+  padding: 16px;
+  display: grid;
+  align-content: start;
+  row-gap: 50px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-dashboard {
+  width: 32px;
+  aspect-ratio: 1;
+}
+
+.title {
+  font-size: 20px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.links > li {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.icon {
+  width: 24px;
+  aspect-ratio: 1;
 }
 
 .header {
-  background-color: blue;
+  background-color: var(--slate-50);
   grid-column: 2 / 3;
 }
 
 .main-content {
-  background-color: red;
+  background-color: var(--slate-300);
   grid-column: 2 / 3;
 }
