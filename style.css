@@ -83,9 +83,97 @@ a {
 .header {
   background-color: var(--slate-50);
   grid-column: 2 / 3;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding: 0px 20px;
+  border-bottom: 3px solid rgba(148, 163, 184, 0.5);
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.search-bar > input {
+  outline: none;
+  border: none;
+  background-color: var(--slate-300);
+  padding: 5px;
+  border-radius: 12px;
+  width: 100%;
+}
+
+.account-info {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.account-info > p {
+  font-weight: bold;
+}
+
+.small-profile {
+  background-color: #facc15;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.small-pic {
+  width: 28px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.profile > div > p {
+  font-size: 0.9rem;
+}
+
+.big-profile {
+  background-color: #facc15;
+  width: 62px;
+  height: 62px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.big-pic {
+  width: 40px;
+}
+
+.buttons-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.btn {
+  border: none;
+  background-color: var(--slate-600);
+  color: var(--slate-100);
+  font-weight: bold;
+  padding: 8px 24px;
+  border-radius: 15px;
+  cursor: pointer;
 }
 
 .main-content {
   background-color: var(--slate-300);
   grid-column: 2 / 3;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
 }
