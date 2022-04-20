@@ -87,7 +87,7 @@ a {
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 1fr 1fr;
   padding: 0px 20px;
-  border-bottom: 3px solid rgba(148, 163, 184, 0.5);
+  border-bottom: 2px solid rgba(15, 23, 42, 0.2);
 }
 
 .search-bar {
@@ -194,6 +194,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .card-title {
@@ -207,4 +208,39 @@ a {
 
 .card-icons {
   text-align: end;
+}
+
+.social-cards {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  padding: 20px 20px 20px 0px;
+  gap: 20px;
+}
+
+.right-card {
+  background-color: var(--slate-50);
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  font-size: 0.8rem;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 100%;
+  justify-content: space-evenly;
+}
+
+.trending-social {
+  display: flex;
+  font-size: 0.8rem;
+  align-items: center;
+  gap: 10px;
+}
+
+.news > p:first-child {
+  font-weight: bold;
+}
+
+.trending-text > p {
+  font-weight: bold;
 }
